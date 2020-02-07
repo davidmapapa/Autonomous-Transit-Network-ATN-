@@ -1,9 +1,13 @@
-# ATN Project car 
+# ATN Project using Lolin D32 microcontroller 
 /*
- * Written by David Mapapa
+ * Written by David Mapapa on Arduino IDE 
  * 
- * This code retreives ultrasoincs, wheel encoder and marker count data and send it
- * to the IP address under host.
+ * This code allow a pod car to run on the inner and outer section of a track. By switching the servo motor either left or                     
+ * right. In order to avoid collisions the podcar retreives ultrasoincs, wheel encoder and marker count data to know 
+ * where it is position and how far are the other pods.
+ * The data are then send to the an IP address server that would take care of mapping all the podcars postions via a software
+ * In addittion a webrowser page that can allow the user to switch the pod either left or right is created using 
+ * ip address allocated to the ESP device by your local network
  */
 
 #include <ESP32Servo.h>
@@ -12,18 +16,23 @@
 #include <WebServer.h>
 #include <ESPmDNS.h>
 
-const char *ssid = "KeystoneWifi4";
-const char *password = "Melodybear3322LL";
-//Bill's IP address = 192.168.1.137
+const char *ssid = "KeystoneWifi4";                 // WiFi name 
+const char *password = "Melodybear3322LL";          // WiFi password
 //const char* ssid = "ATTwvqYWQs";
 //const char* password = "ds?37=qg545n";
+
+// Host ip that received the data. Make sure to change it to your computer's ip 
+// Also make sure to have a web server that can read the data sent 
+  
+  const char* host ="10.0.0.156";
 //const char* host ="192.168.1.192";
 //const char* host ="192.168.1.200";
 //const char* host ="192.168.1.137";
-const char* host ="10.0.0.156";
+//Bill's IP address = 192.168.1.137
 
-WiFiClient client; 
-WiFiServer server(80);
+
+WiFiClient client;            // Creating an object of the WiFiClient's class 
+WiFiServer server(80);       // Creating an object of the WiFiServer's class 
 
 #include <Adafruit_NeoPixel.h> 
 #ifdef __AVR__
@@ -267,7 +276,6 @@ void loop() {
           return;
         }
       }
-    
       // Read all the lines of the reply from server and print them to Serial
       while(client.available()) {
         String serialStr = client.readStringUntil('\r');
@@ -287,9 +295,8 @@ void loop() {
        Serial.write(c);                    // print it out the serial monitor
        header += c;
         if (c == '\n') {                    // if the byte is a newline character
-          
-          // if the current line is blank, you got two newline characters in a row.
-          // that's the end of the client HTTP request, so send a response:
+       // if the current line is blank, you got two newline characters in a row.
+      // that's the end of the client HTTP request, so send a response:
           if (currentLine.length() == 0) {
             // HTTP headers always start with a response code (e.g. HTTP/1.1 200 OK)
             // and a content-type so the client knows what's coming, then a blank line:
@@ -297,7 +304,6 @@ void loop() {
             client1.println("Content-type:text/html");
             client1.println("Connection: close");
             client1.println();
-            
             // turns the move car in or out
             if (header.indexOf("GET /inStation") >= 0) {
               myservo.write(pos2);
@@ -310,17 +316,14 @@ void loop() {
             client1.println("<!DOCTYPE html><html>");
             client1.println("<head><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">");
             client1.println("<link rel=\"icon\" href=\"data:,\">");
-            
             // CSS to style the in/out buttons 
             // Feel free to change the background-color and font-size attributes to fit your preferences
             client1.println("<style>html { font-family: Helvetica; display: inline-block; margin: 0px auto; text-align: center;}");
             client1.println(".button { background-color: #4CAF50; border: none; color: white; padding: 16px 40px;");
             client1.println("text-decoration: none; font-size: 30px; margin: 2px; cursor: pointer;}");
             client1.println(".button2 {background-color: #555555;}</style></head>");
-            
             // Web Page Heading
             client1.println("<body><h1>Track Switches</h1>");
-            
             // Display current state, and IN/OUT buttons   
             client1.println("<p>Inner track: " + output26State + "</p>");
             // If the output26State is off, it displays the ON button       
@@ -332,9 +335,7 @@ void loop() {
             if (output27State=="out") {
               client1.println("<p><a href=\"/outStation\"><button class=\"button\">LEFT</button></a></p>");
             } 
-            
             client1.println("</body></html>");
-            
             // The HTTP response ends with another blank line
             client1.println();
             // Break out of the while loop
@@ -361,11 +362,9 @@ void speedNormal() {
       stepChange = countStep - countStepLast ;
       countStepLast = countStep;
       mmTraveled =  stepChange * stepMM * 2 / timeSpan; 
-      
       if(mmTraveled < motorNormal){
           motorSpeed = motorSpeed + 10;
         } 
-      
       else if( mmTraveled + mmTorelance > motorNormal) {
              motorSpeed = motorSpeed - 20;
           } 
@@ -385,11 +384,9 @@ void midStop(){
     stepChange = countStep - countStepLast ;
     countStepLast = countStep;
     mmTraveled =  stepChange * stepMM * 2 / timeSpan;  
-     
     if (mmTraveled>20) {
       motorSpeed=motorSpeed/1.01;
      }
-
     else if (mmTraveled<20) {
       motorSpeed++;
      }
@@ -404,14 +401,12 @@ void rearAccelerator () {
     stepChange = countStep - countStepLast ;
     countStepLast = countStep;
     mmTraveled =  stepChange * stepMM * 2 / timeSpan;  
-
     if (mmTraveled<140) {
       motorSpeed++;
      }
   }
   motorSpeed=constrain(motorSpeed,110,140); 
-  sigmaDeltaWrite(0, motorSpeed);
-  
+  sigmaDeltaWrite(0, motorSpeed); 
 }
 
 void interruptMarker() {
@@ -425,14 +420,12 @@ void interruptWheel() {
 
 const int Ultra(const int Ping, const int Echo) { // returns disctance in mm
     long duration;
-    
     pinMode(Ping, OUTPUT);  // send the ping
     digitalWrite(Ping, HIGH);  // start the ping
     delayMicroseconds(5);   // run for 5 microseconds
     digitalWrite(Ping, LOW);  // stop pinging
     pinMode(Echo, INPUT);  // switch to echo
     duration = pulseIn(Echo, HIGH);  // read the echo
-    
     return microsecondsToMM(duration); 
  }
 
@@ -445,12 +438,9 @@ void Neocolor(String var)
 {
   if (millis() > neoPixelMs) {
     neoPixelMs = millis() + DELAYcountMarker;
-    
     pixels.clear(); // Set all pixel colors to 'off'
-  
     // The first NeoPixel in a strand is #0, second is 1, all the way up
     // to the count of pixels minus one.
-      
     for(int i=0; i<NUMPIXELS; i++) { 
       // For each pixel...
         if (var == "red") {

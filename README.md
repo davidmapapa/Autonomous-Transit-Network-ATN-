@@ -10,4 +10,3 @@
  
  Our project will design a small scale design of an autonomous transportation network, in order to show the functionality, as well as create a basic software platform that is scalable. 
  
-jpeg https://nextcity.org/images/made/JPods_PersonalRapidTransit_920_659_80.jpg

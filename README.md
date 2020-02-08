@@ -1,4 +1,4 @@
-# ATN Project using Lolin D32 microcontroller 
+# Autonomous Transit Network  
 /*
  * Written by David Mapapa on Arduino IDE 
  * 

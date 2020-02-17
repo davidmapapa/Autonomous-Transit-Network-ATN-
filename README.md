@@ -9,6 +9,4 @@
  # ATN project
  
  Our project will design a small scale design of an autonomous transportation network, in order to show the functionality, as well as create a basic software platform that is scalable. 
- 
-https://github.com/davidmapapa/Autonomous-Transit-Network-ATN-/issues/3#issue-566463864
- 
+  

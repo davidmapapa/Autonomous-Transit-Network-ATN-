@@ -16,12 +16,14 @@ Building such pod will require both hardware and software skills, which will be 
  
  1* PCB and Microcontroller
  
- The Printed Circuit Board (PCB) used in the podcar was specifically design by Jpods to work for this specific project. The board was design to fit a ESP LOLIN D32 board, a RASPBERRY PI, and multiple sensors. The board can be found at:
+ The Printed Circuit Board (PCB) used in the podcar was specifically design by Jpods to work for this specific project. The board was design to fit a ESP LOLIN D32 board, a RASPBERRY PI, and multiple sensors. The board can be found at this link:
  
  Once the board received, I soldered the different connectors (2 pins, 3 pins and 4 pins), resistors, capacitors, OPamp and the LOLIN D32 board holder. 
 
 Here are pictures of an empty board, pins conncetors, resistors and capacitors before and after soldering. 
 ![IMG_9739 3](https://user-images.githubusercontent.com/58591461/74690625-95e45400-5194-11ea-99a9-ad1611ff258d.JPG)
+![IMG_9762 4](https://user-images.githubusercontent.com/58591461/74691817-32a8f080-5199-11ea-8c66-da995081eb52.jpg)
+
 
 A detailed video of the steps to build the board can be found at this link:
 

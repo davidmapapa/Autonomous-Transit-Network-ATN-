@@ -20,7 +20,7 @@ Building such pod will require both hardware and software skills, which will be 
  
  Once the board received, I soldered the different connectors (2 pins, 3 pins and 4 pins), resistors, capacitors, OPamp and the LOLIN D32 board holder. 
 
-Here's is a picture of the an empty board, the pins conncetors, resistors and capacitors.
+Here are pictures of an empty board, pins conncetors, resistors and capacitors before and after soldering. 
 ![IMG_9739 3](https://user-images.githubusercontent.com/58591461/74690625-95e45400-5194-11ea-99a9-ad1611ff258d.JPG)
 
 A detailed video of the steps to build the board can be found at this link:
@@ -28,7 +28,8 @@ A detailed video of the steps to build the board can be found at this link:
 
 Each board were then placed in a single podcar. 
 ![IMG_9754 4](https://user-images.githubusercontent.com/58591461/74691691-a696c900-5198-11ea-8146-19ac58ae621d.jpg)
- ![IMG_9757 3](https://user-images.githubusercontent.com/58591461/74691437-b06bfc80-5197-11ea-8f12-45d3aa0eaa87.JPG |width= 100)
+![IMG_9757 4](https://user-images.githubusercontent.com/58591461/74691734-d34ae080-5198-11ea-8845-0f1f017e3e73.jpg)
+
 
 
  

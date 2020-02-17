@@ -26,7 +26,9 @@ Here's is a picture of the an empty board, the pins conncetors, resistors and ca
 A detailed video of the steps to build the board can be found at this link:
 
 
-Each board were then placed in a single podcar.   
+Each board were then placed in a single podcar. 
+![IMG_9754 3](https://user-images.githubusercontent.com/58591461/74691383-7b5faa00-5197-11ea-9d72-c30ec9a5b8a6.JPG) 
+
  
 
   

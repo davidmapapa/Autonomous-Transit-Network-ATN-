@@ -23,9 +23,10 @@ Building such pod will require both hardware and software skills, which will be 
 Here's is a picture of the an empty board, the pins conncetors, resistors and capacitors.
 ![IMG_9739 3](https://user-images.githubusercontent.com/58591461/74690625-95e45400-5194-11ea-99a9-ad1611ff258d.JPG)
 
+A detailed video of the steps to build the board can be found at this link:
 
-Here's the illustration of finsihed board and few empty ones 
- ![IMG_9738 3](https://user-images.githubusercontent.com/58591461/74690101-9a0f7200-5192-11ea-9195-47a8b324b42b.JPG)
+
+Each board were then placed in a single podcar.   
  
 
   

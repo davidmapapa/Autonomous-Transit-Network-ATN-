@@ -1,4 +1,4 @@
-# Summary 
+# ABSTRACT
 
  An Autonomous Transit Network can be described as a system of podcars (vehicle) that operate under a common track while each following their individual route. The system is labeled autonomous because no driving operator stir the cars, but instead a centralize computer manage the flow of traffic depending on each client's destination. In such system, the podcars operate on an ELEVATED guideway avoiding traffic, buildings and natural habitats. Such system of pod cars are often referred to as Personal Rapid Transit (PRT). 
  

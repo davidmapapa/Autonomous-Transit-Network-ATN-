@@ -14,7 +14,7 @@ Building such pod will require both hardware and software skills, which will be 
 5.Debug  
  
  
- ##1.PCB and Microcontroller: 
+ ## 1.PCB and Microcontroller: 
  
  The Printed Circuit Board (PCB) used in the podcar was specifically design by Jpods to work for this specific project. The board was design to fit a ESP LOLIN D32 board, a RASPBERRY PI, and multiple sensors. The board can be found at this link:
  
@@ -33,7 +33,7 @@ Each board were then placed in a single podcar.
 ![IMG_9757 4](https://user-images.githubusercontent.com/58591461/74691734-d34ae080-5198-11ea-8845-0f1f017e3e73.jpg)
 
 
-##2.Sensors: 
+## 2.Sensors: 
 
  In order to make a single pod operate autonomoulsy, it needs to be able to process certain factors. Once those parameters are processed each pod can make processed decisions and at the same time ensure safety and efficiency. The important factors that each pod needs to know are the front, back and side distances that seperates it from any objects, the speed at which it is travelling, the distance travelled, whether it has switch from an inner to an outter station and finally the position of other pods. 
 

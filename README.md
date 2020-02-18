@@ -7,11 +7,11 @@
 Building such pod will require both hardware and software skills, which will be explained in detail in this project.    
  
 # TABLE OF CONTENTS 
-### 1.PCB and Microcontroller   
-### 2.Sensors   
-### 3.Code    
-### 4.Track  
-### 5.Debug  
+##### 1.PCB and Microcontroller   
+##### 2.Sensors   
+##### 3.Code    
+##### 4.Track  
+##### 5.Debug  
  
  
  ## 1.PCB and Microcontroller: 

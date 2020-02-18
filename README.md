@@ -7,6 +7,11 @@
 Building such pod will require both hardware and software skills, which will be explained in detail in this project.  
 
 https://vimeo.com/390130443  
+
+<iframe src="https://player.vimeo.com/video/390130443" width="640" height="392" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<p><a href="https://vimeo.com/390130443">JPods STEAM Scale Model 2020-02-08</a> from <a href="https://vimeo.com/user10808271">Bill James</a> on <a href="https://vimeo.com">Vimeo</a>.</p>   
+
+
  
 # TABLE OF CONTENTS 
 ##### 1.PCB and Microcontroller   

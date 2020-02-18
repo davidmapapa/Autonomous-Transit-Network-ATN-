@@ -25,14 +25,8 @@ Here are pictures of an empty board, pins conncetors, resistors and capacitors b
 <img src="https://user-images.githubusercontent.com/58591461/74690625-95e45400-5194-11ea-99a9-ad1611ff258d.JPG" width="400">
 
 
-A detailed video of the steps to build the board can be found at this link:
-
-
 Each board were then placed in a single podcar.
-
 <img src="https://user-images.githubusercontent.com/58591461/74691691-a696c900-5198-11ea-8146-19ac58ae621d.jpg" width="390">  <img src="https://user-images.githubusercontent.com/58591461/74691734-d34ae080-5198-11ea-8845-0f1f017e3e73.jpg" width="400">
-
-
 
 
 ## 2.Sensors: 
@@ -47,6 +41,9 @@ Each board were then placed in a single podcar.
  -Neopixel
  -ESP camera
  -Raspberry pi
+   
+   ##### a. Ultrasonic sensors:
+   An ultrasonic sensor can be considered as 
  
 
 

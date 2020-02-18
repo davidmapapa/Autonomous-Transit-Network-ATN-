@@ -8,7 +8,7 @@ Building such pod will require both hardware and software skills, which will be 
 
 https://vimeo.com/390130443  
 
-<iframe src="https://player.vimeo.com/video/390130443" width="640" height="392" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>  
+<iframe src="https://player.vimeo.com/video/390130443" width="640" height="392" frameborder="0" ></iframe>  
 
  
 # TABLE OF CONTENTS 

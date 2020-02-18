@@ -8,8 +8,7 @@ Building such pod will require both hardware and software skills, which will be 
 
 https://vimeo.com/390130443  
 
-<iframe src="https://player.vimeo.com/video/390130443" width="640" height="392" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-<p><a href="https://vimeo.com/390130443">JPods STEAM Scale Model 2020-02-08</a> 
+<iframe src="https://player.vimeo.com/video/390130443" width="640" height="392" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>  
 
  
 # TABLE OF CONTENTS 

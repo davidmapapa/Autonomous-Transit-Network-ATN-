@@ -23,6 +23,7 @@ Building such pod will require both hardware and software skills, which will be 
 Here are pictures of an empty board, pins conncetors, resistors and capacitors before and after soldering. 
 <img src="https://user-images.githubusercontent.com/58591461/74690625-95e45400-5194-11ea-99a9-ad1611ff258d.JPG" width="400">
 ![IMG_9739 3](https://user-images.githubusercontent.com/58591461/74690625-95e45400-5194-11ea-99a9-ad1611ff258d.JPG) 
+<img src="https://user-images.githubusercontent.com/58591461/74691817-32a8f080-5199-11ea-8c66-da995081eb52.jpg" width="400">
 ![IMG_9762 4](https://user-images.githubusercontent.com/58591461/74691817-32a8f080-5199-11ea-8c66-da995081eb52.jpg)
 
 

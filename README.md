@@ -38,7 +38,7 @@ Each board were then placed in a single podcar.
 
  In order to make a single pod operate autonomoulsy, it needs to be able to process certain factors. Once those parameters are processed each pod can make processed decisions and at the same time ensure safety and efficiency. The important factors that each pod needs to know are the front, back and side distances that seperates it from any objects, the speed at which it is travelling, the distance travelled, whether it has switch from an inner to an outter station and finally the position of other pods. 
 
- To do so, we used few sensors that measured those aformentioned variables. Therefore the sensors used per pod were:
+ To do so, we used few sensors that measured those aformentioned variables coupled with the Lolin D32 WiFi functionality. Here are the sensors used in the code per pod:
  -ultrasonic sensors
  -dc motor
  -servo motor
@@ -46,9 +46,27 @@ Each board were then placed in a single podcar.
  -Neopixel
  -ESP camera
  -Raspberry pi
+ -WiFi library
    
-   ##### a. Ultrasonic sensors:
+   ##### a. Neopixel:
+   
+   
+   ##### b. Ultrasonic sensors:
    An ultrasonic sensor can be considered as 
+    
+   ##### c. DC Motor:
+     
+   ##### d. Servo Motor:
+      
+   ##### e. Lolin D32:
+   
+   ##### e. Hall Effect:
+   
+   ##### e. ESP Camera:
+   
+   ##### e. Raspberry Pi:
+   
+   ##### e. WiFi LoLIN D32:
  
 
 

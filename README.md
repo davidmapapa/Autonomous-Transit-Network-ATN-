@@ -60,13 +60,13 @@ Each board were then placed in a single podcar.
       
    ##### e. Lolin D32:
    
-   ##### e. Hall Effect:
+   ##### f. Hall Effect:
    
-   ##### e. ESP Camera:
+   ##### g. ESP Camera:
    
-   ##### e. Raspberry Pi:
+   ##### h. Raspberry Pi:
    
-   ##### e. WiFi LoLIN D32:
+   ##### i. WiFi LoLIN D32:
  
 
 

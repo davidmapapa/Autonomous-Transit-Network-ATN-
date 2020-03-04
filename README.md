@@ -48,25 +48,25 @@ Each board were then placed in a single podcar.
  -Raspberry pi
  -WiFi library
    
-   ##### a. Neopixel:
+   #### a. Neopixel:
    
    
-   ##### b. Ultrasonic sensors:
+   #### b. Ultrasonic sensors:
    An ultrasonic sensor can be considered as 
     
-   ##### c. DC Motor:
+   #### c. DC Motor:
      
-   ##### d. Servo Motor:
+   #### d. Servo Motor:
       
-   ##### e. Lolin D32:
+   #### e. Lolin D32:
    
-   ##### f. Hall Effect:
+   #### f. Hall Effect:
    
-   ##### g. ESP Camera:
+   #### g. ESP Camera:
    
-   ##### h. Raspberry Pi:
+   #### h. Raspberry Pi:
    
-   ##### i. WiFi LoLIN D32:
+   #### i. WiFi LoLIN D32:
  
 
 

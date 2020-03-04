@@ -36,7 +36,7 @@ Each board were then placed in a single podcar.
 
 ## 2.Sensors: 
 
- In order to make a single pod operate autonomoulsy, it needs to be able to process certain factors. Once those parameters are processed each pod can make processed decisions and at the same time ensure safety and efficiency. The important factors that each pod needs to know are the front, back and side distances that seperates it from any objects, the speed at which it is travelling, the distance travelled, whether it has switch from an inner to an outter station and finally the position of other pods. 
+ In order to make a single pod operate autonomoulsy, different physical factors needs to be processed. This is done to ensure the safety and robustness of the general system we aim to build. Among those factos are the speed at which a pod is travelling, the front, back and side distances that seperates it from any objects, the distance travelled,  whether it has switch from an inner to an outter station and finally the position of other pods.  
 
  To do so, we used few sensors that measured those aformentioned variables coupled with the Lolin D32 WiFi functionality. Here are the sensors used in the code per pod:
  -ultrasonic sensors

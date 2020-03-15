@@ -1,12 +1,18 @@
 # ABSTRACT
 
- An Autonomous Transit Network **(ATN)** can be described as a system of podcars vehicle that operate under a common track, while each following their individual route. The system is labeled autonomous because no driving operator stir the cars, but instead a centralize computer manage the flow of traffic depending on each client's destination. In such system, the podcars operate on an ELEVATED guideway avoiding traffic, buildings and natural habitats. Such system of pod cars are often referred to as Personal Rapid Transit **(PRT)**. An illustration of such system is further explained in the [CGTN AMERICA news report](https://www.youtube.com/watch?v=QBp7HuzCCWU) and [Jpod's video](https://www.youtube.com/watch?v=rRIzvfW8XXs).
+ An Autonomous Transit Network **(ATN)** can be described as a system of podcars vehicle that operate under a common track, while each following their individual route. The system is autonomous due to the fact that there's no driving operator in the vehicle. But rather a centralize computer managing the flow of traffic and getting each client to their destination.
+
+In such system, the podcars operate on an ELEVATED guideway or rails, avoiding traffic, buildings and natural habitats. Such system of vehicles are often referred to as Personal Rapid Transit **(PRT)**. Here are perfect illustration of such system by the [CGTN AMERICA news report](https://www.youtube.com/watch?v=QBp7HuzCCWU) and [Jpod's video](https://www.youtube.com/watch?v=rRIzvfW8XXs).
  
- In this project, I will describe the necessary steps needed in order to design, build and program a small scale podcar system. The pod system will run on a track with an inner and outter switch (representing station).
+ In this project, I will describe the necessary steps needed in order to design, build and program a small scale podcar system. The pod system will run on a track with an inner and outter section (representing stations).
  
  After going through this tutorial you should be able to grasp the necessary code in order to program a single pod. [single pod video](https://player.vimeo.com/video/390130443).  
 
-Once you obtain the necessary software skills you can add multiple pods and have build a system. [Two pods with collision avoidance video](https://www.youtube.com/watch?v=rCR6fW-CSME).
+Once you obtain the necessary software skills you can add multiple pods and build your own system. [Two pods with collision avoidance video](https://www.youtube.com/watch?v=rCR6fW-CSME).
+
+The 3D printing drawings and CAD necessary to build both the track and the vehicle can be found at www.jpods.com
+
+Here will be listed the different electronics parts and related software to program the pods. Moreover, most of the code was performed on the Arduino IDE.
  
 # TABLE OF CONTENTS 
 ##### 1.PCB and Microcontroller   
@@ -18,9 +24,9 @@ Once you obtain the necessary software skills you can add multiple pods and have
  
  ## 1.PCB and Microcontroller: 
  
- The Printed Circuit Board (PCB) used in the podcar was specifically design by Jpods to work for this specific project. The board was design to fit a ESP LOLIN D32 board, a RASPBERRY PI, and multiple sensors. The board can be found at this link:
+ The Printed Circuit Board (PCB) used in the podcar was specifically design by Jpods for this project. The board was design to fit an ESP LOLIN D32 board, a RASPBERRY PI, and multiple sensors. The board can be found at this link: [Board](https://drive.google.com/drive/u/0/folders/1CtqrttBD3XoiUPqs3ZEBOA0wLDOCQpJk).
  
- Once the board received, I soldered the different connectors (2 pins, 3 pins and 4 pins), resistors, capacitors, OPamp and the LOLIN D32 board holder. 
+ Once the board received, I soldered the different connectors (2 pins, 3 pins and 4 pins), resistors, capacitors, OPamp and the LOLIN D32 connectors. 
 
 Here are pictures of an empty board, pins conncetors, resistors and capacitors before and after soldering. 
 <img src="https://user-images.githubusercontent.com/58591461/74691817-32a8f080-5199-11ea-8c66-da995081eb52.jpg" width="350">
@@ -33,9 +39,9 @@ Each board were then placed in a single podcar.
 
 ## 2.Sensors: 
 
- In order to make a single pod operate autonomoulsy, different physical factors needs to be processed. This is done to ensure the safety and robustness of the general system we aim to build. Among those factos are the speed at which a pod is travelling, the front and back distances that seperates it from any objects, the distance travelled,  whether it has switch from an inner to an outter station and finally the position of other pods.  
+ In order to make a single pod operate autonomoulsy, different physical factors needed to be processed. This was done to ensure the safety and robustness of the system. Among those factos were the speed of the podcar vehicle, the front and back distances that seperates the vehicle from any objects, the distance travelled by the pod, whether the pod was in the inner or outter station and finally the position of other podcar vehicles.  
 
- To do so, we used few sensors that measured those aformentioned variables coupled with the Lolin D32 WiFi functionality. Here are the sensors used in the code per pod:
+ To do so, we used few sensors that measured those aformentioned variables:
  -ultrasonic sensors
  -dc motor
  -servo motor

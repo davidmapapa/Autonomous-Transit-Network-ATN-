@@ -8,7 +8,8 @@ Building such pod will require both hardware and software skills, which will be 
   
 
 [Single pod on track](https://player.vimeo.com/video/390130443)
-[Two pods with collision avoidance] (https://www.youtube.com/watch?v=rCR6fW-CSME)
+
+[Two pods with collision avoidance](https://www.youtube.com/watch?v=rCR6fW-CSME)
  
 # TABLE OF CONTENTS 
 ##### 1.PCB and Microcontroller   

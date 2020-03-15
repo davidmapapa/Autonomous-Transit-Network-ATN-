@@ -41,17 +41,9 @@ Each board were then placed in a single podcar.
 
  In order to make a single pod operate autonomoulsy, different physical factors needed to be processed. This was done to ensure the safety and robustness of the system. Among those factos were the speed of the podcar vehicle, the front and back distances that seperates the vehicle from any objects, the distance travelled by the pod, whether the pod was in the inner or outter station and finally the position of other podcar vehicles.  
 
- To do so, we used few sensors that measured those aformentioned variables:
- -ultrasonic sensors
- -dc motor
- -servo motor
- -hall effect (on motor & track)
- -Neopixel
- -ESP camera
- -Raspberry pi
- -WiFi library
-   
+ To do so, we used few sensors that measured those aformentioned variables:  
    #### a. Neopixel:
+   Those are a string of LED located in front of the car in order to report the status of the vehilce. **Green** if there's no obstacle, **Red** if there's obstacle in front of the vehicle and **Blue** for obstacles in the back.
    
    
    #### b. Ultrasonic sensors:

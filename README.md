@@ -44,6 +44,7 @@ Each board was placed in a single podcar.
 To do so, we used few sensors that measured those aformentioned variables:  
    #### a. Neopixel: 
    Those are a string of LED located in front of the car in order to report the status of the vehilce. **Green** if there's no obstacle, **Red** if there's obstacle in front of the vehicle and **Blue** for obstacles in the back.
+   
    <img src="https://cdn-shop.adafruit.com/1200x900/1426-00.jpg" width="305">
    
    #### b. Ultrasonic sensors: 

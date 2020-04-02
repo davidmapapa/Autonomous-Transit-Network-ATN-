@@ -44,11 +44,13 @@ Each board were then placed in a single podcar.
  To do so, we used few sensors that measured those aformentioned variables:  
    #### a. Neopixel:
    Those are a string of LED located in front of the car in order to report the status of the vehilce. **Green** if there's no obstacle, **Red** if there's obstacle in front of the vehicle and **Blue** for obstacles in the back.
-   <img src="https://cdn-shop.adafruit.com/1200x900/1426-00.jpg" width="290">
+   <img src="https://cdn-shop.adafruit.com/1200x900/1426-00.jpg" width="350">
    
    
    #### b. Ultrasonic sensors:
-   An ultrasonic sensor can be considered as an electronic device that measure the distance of an object using ultrasonic waves. The ultrasonic sensor sends a wave signals through a Ping and accounts for the time it takes for the wave to hit an object and bounce back. Knowing the speed at which a ultrasonic wave travel, it easy to determine the distance at which the object is located.   
+   An ultrasonic sensor can be considered as an electronic device that measure the distance of an object using ultrasonic waves. The ultrasonic sensor sends a wave signals through a Ping and accounts for the time it takes for the wave to hit an object and bounce back. Knowing the speed at which a ultrasonic wave travel, it easy to determine the distance at which the object is located. 
+   
+   <img src="https://images-na.ssl-images-amazon.com/images/I/71-TKtOybqL._SL1500_.jpg" width="350">
     
    #### c. DC Motor:
    A DC Motor is an actuator device that converts electric current into mechanical energy. That energy is represented in terms of speed. 

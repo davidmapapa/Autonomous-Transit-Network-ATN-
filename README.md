@@ -47,21 +47,20 @@ Each board were then placed in a single podcar.
    
    
    #### b. Ultrasonic sensors:
-   An ultrasonic sensor can be considered as 
+   An ultrasonic sensor can be considered as an electronic device that measure the distance of an object using ultrasonic waves. The ultrasonic sensor sends a wave signals through a Ping and accounts for the time it takes for the wave to hit an object and bounce back. Knowing the speed at which a ultrasonic wave travel, it easy to determine the distance at which the object is located.   
     
    #### c. DC Motor:
+   A DC Motor is an actuator device that converts electric current into mechanical energy. That energy is represented in terms of speed. 
      
    #### d. Servo Motor:
+   A servo motor is also an actuator device, that can precisely control its linear position, velocity and acceleration. A servo motor is a motor that has a build in closed-loop system. Meaning the postion of the motor can be determined using position feedback control. 
       
    #### e. Lolin D32:
+   Lolin D32 is a microcontroller chip that is part of the WEMOS ESP32 microcontroller family. The chip is compatible with the Arduino IDE as well as micropython. A major benefit of the chip is that it easily allows WiFi connection.
    
    #### f. Hall Effect:
    
-   #### g. ESP Camera:
-   
-   #### h. Raspberry Pi:
-   
-   #### i. WiFi LoLIN D32:
+
  
 
 

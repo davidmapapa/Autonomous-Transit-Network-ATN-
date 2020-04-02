@@ -44,27 +44,27 @@ Each board was placed in a single podcar.
 To do so, we used few sensors that measured those aformentioned variables:  
    #### a. Neopixel: 
    Those are a string of LED located in front of the car in order to report the status of the vehilce. **Green** if there's no obstacle, **Red** if there's obstacle in front of the vehicle and **Blue** for obstacles in the back.
-   <img src="https://cdn-shop.adafruit.com/1200x900/1426-00.jpg" width="350">
+   <img src="https://cdn-shop.adafruit.com/1200x900/1426-00.jpg" width="305">
    
    #### b. Ultrasonic sensors: 
    An ultrasonic sensor can be considered as an electronic device that measure the distance of an object using ultrasonic waves. The ultrasonic sensor sends a wave signals through a Ping and accounts for the time it takes for the wave to hit an object and bounce back. Knowing the speed at which a ultrasonic wave travel, it easy to determine the distance at which the object is located. 
    
-   <img src="https://images-na.ssl-images-amazon.com/images/I/71-TKtOybqL._SL1500_.jpg" width="350">
+   <img src="https://images-na.ssl-images-amazon.com/images/I/71-TKtOybqL._SL1500_.jpg" width="305">
     
    #### c. DC Motor: 
    A DC Motor is an actuator device that converts electric current into mechanical energy. That energy is represented in terms of speed. 
    
-   <img src="https://www.wiltronics.com.au/wp-content/uploads/images/make-and-create/gear-motor-dc-toy-car-wheel-arduino.jpg" width="350">
+   <img src="https://www.wiltronics.com.au/wp-content/uploads/images/make-and-create/gear-motor-dc-toy-car-wheel-arduino.jpg" width="305">
      
    #### d. Servo Motor:
    A servo motor is also an actuator device, that can precisely control its linear position, velocity and acceleration. A servo motor is a motor that has a build in closed-loop system. Meaning the postion of the motor can be determined using position feedback control. 
    
-   <img src="https://media.digikey.com/Photos/DFRobot/MFG_SER0006.jpg" width="350" >
+   <img src="https://media.digikey.com/Photos/DFRobot/MFG_SER0006.jpg" width="305" >
    
    #### e. Hall Effect:
    An Hall effect sensor is a device that is able to detect a magnetic field. Therefore, one can use an hall sensor to detect magnets that are located at close proximity. We will use two different type of hall sensor, a latching sensor (left) that would detect small magnets placed in the wheel and through some simple calculations determine the distance travelled. As well as a non latching magnet (right) on the podcar to detect the magnet on the track and therefore determine our position on the track. There will be a total of five magnets on the track each representing a station.   
-   <img src="https://s3-sa-east-1.amazonaws.com/robocore-lojavirtual/262/images/262_1_H.png?20200127094024" width="350" >
-   <img src="https://cdn.shopify.com/s/files/1/1978/9859/products/03_25_1024x1024.jpg?v=1499266671" width="350" >
+   <img src="https://s3-sa-east-1.amazonaws.com/robocore-lojavirtual/262/images/262_1_H.png?20200127094024" width="305" >
+   <img src="https://cdn.shopify.com/s/files/1/1978/9859/products/03_25_1024x1024.jpg?v=1499266671" width="305" >
    
 
  

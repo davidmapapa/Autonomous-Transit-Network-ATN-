@@ -291,6 +291,7 @@ void loop() {
    
    #### e. Hall Effect:
    An Hall effect sensor is a device that is able to detect a magnetic field. Therefore, one can use an hall sensor to detect magnets that are located at close proximity. We will use two different type of hall sensor, a latching sensor (left) that would detect small magnets placed in the wheel and through some simple calculations determine the distance travelled. As well as a non latching magnet (right) on the podcar to detect the magnet on the track and therefore determine our position on the track. There will be a total of five magnets on the track each representing a station. 
+   
    <img src="https://s3-sa-east-1.amazonaws.com/robocore-lojavirtual/262/images/262_1_H.png?20200127094024" width="305" >
    <img src="https://cdn.shopify.com/s/files/1/1978/9859/products/03_25_1024x1024.jpg?v=1499266671" width="305" >
    

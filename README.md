@@ -14,13 +14,13 @@ Here will be listed the different electronics parts and the Arduino files necess
  
  
  ## 1.PCB and Microcontroller: 
- __Microcontroller__: 
+ __Printer Circuit Board__: 
 The Printed Circuit Board (PCB) used in the podcar was specifically design by Jpods for this project. The board was design to fit an ESP LOLIN D32 board, a RASPBERRY PI, and multiple sensors. The board's link can be found by clicking below: [Board](https://drive.google.com/drive/u/0/folders/1CtqrttBD3XoiUPqs3ZEBOA0wLDOCQpJk). 
  
  Once the board received, I soldered the different connectors (2 pins, 3 pins and 4 pins), resistors, capacitors, OPamp and the LOLIN D32 connectors. A video of me assembling the board from scratch will be linked afterwards. 
  
-__Lolin D32__:
-Lolin D32 is a microcontroller chip that is part of the WEMOS ESP32 microcontroller family. The chip is compatible with the Arduino IDE as well as micropython. A major benefit of the chip is that it easily allows WiFi connection.
+__Microcontroller__:
+The Lolin D32 is a chip that is part of the WEMOS ESP32 microcontroller family. The chip is compatible with the Arduino IDE as well as micropython. A major benefit of the chip is that it easily allows WiFi connection.
 
 Here are pictures of an empty board, pins conncetors, resistors and capacitors before and after soldering. 
 <img src="https://user-images.githubusercontent.com/58591461/74691817-32a8f080-5199-11ea-8c66-da995081eb52.jpg" width="350">

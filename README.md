@@ -17,8 +17,8 @@ Here will be listed the different electronics parts and the Arduino files necess
 ##### 1.PCB and Microcontroller   
 ##### 2.Sensors
 ######  a.Description
-######  b.Code <br /><br /><br /><br />  
-##### 3. Conclusion
+######  b.Code 
+##### 3. Conclusion <br /><br /><br /><br />  
 
  
  
@@ -52,8 +52,7 @@ To do so, we used few sensors that measured those aformentioned variables:
       
    <img src="https://cdn-shop.adafruit.com/1200x900/1426-00.jpg" width="305">
    
-   ##### Code:
-   
+   ##### Code:  
 ```C++
 // Your code here
 include <Adafruit_NeoPixel.h>
@@ -78,8 +77,7 @@ String green;
 String red;
 String blue;
 
-void setup() 
-{
+void setup() {
   Serial.begin(115200);
   // These lines are specifically to support the Adafruit Trinket 5V 16 MHz.
   // Any other board, you can remove this part (but no harm leaving it):
@@ -89,11 +87,9 @@ void setup()
   // END of Trinket-specific code.
 
   pixels.begin(); // INITIALIZE NeoPixel strip object (REQUIRED)
-
 }
 
-void loop()
-{
+void loop(){
   Serial.println("displaying red color");
   delay(500);
   Neocolor("red");
@@ -103,39 +99,28 @@ void loop()
   Serial.println("displaying blue color");
   delay(500);
   Neocolor("blue");
-  }
+ }
 
-
-void Neocolor(String var)
-{
+void Neocolor(String var){
     pixels.clear(); // Set all pixel colors to 'off'
-  
     // The first NeoPixel in a strand is #0, second is 1, all the way up
     // to the count of pixels minus one.
-    for(int i=0; i<NUMPIXELS; i++) 
-    
-    { // For each pixel...
-      if (var == "red") 
-      {
+    for(int i=0; i<NUMPIXELS; i++)  { // For each pixel...
+      if (var == "red")  {
         // pixels.Color() takes RGB values, from 0,0,0 up to 255,255,255
         // Here we're using a moderately bright red color:
         pixels.setPixelColor(i, pixels.Color(150, 0, 0));
       }
-      else if (var == "green")
-      { 
+      else if (var == "green") { 
         // pixels.Color() takes RGB values, from 0,0,0 up to 255,255,255
         // Here we're using a moderately bright green color:
         pixels.setPixelColor(i, pixels.Color(0, 150, 0));
       }
-      else if (var == "blue")
-      {
-        // pixels.Color() takes RGB values, from 0,0,0 up to 255,255,255
+      else if (var == "blue"){
         // Here we're using a moderately bright blue color:
         pixels.setPixelColor(i, pixels.Color(0, 0, 150));
       }
-  
       pixels.show();   // Send the updated pixel colors to the hardware.
-  
       delay(DELAYVAL); // Pause before next pass through loop
     }
 }

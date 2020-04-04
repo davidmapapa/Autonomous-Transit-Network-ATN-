@@ -17,7 +17,8 @@ Here will be listed the different electronics parts and the Arduino files necess
 ##### 1.PCB and Microcontroller   
 ##### 2.Sensors
 ######  a.Description
-######  b.Code <br /><br /><br /><br />   
+######  b.Code <br /><br /><br /><br />  
+##### 3. Conclusion
 
  
  
@@ -337,7 +338,10 @@ void interruptHall() {
     val ++ ; 
    }
    
-```  
+``` 
+
+<br /><br /><br />
+## 3. Conclusion
    
   
 

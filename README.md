@@ -16,7 +16,6 @@ Here will be listed the different electronics parts and the Arduino files necess
  ## 1.PCB and Microcontroller: 
  __Printer Circuit Board__: 
 The Printed Circuit Board (PCB) used in the podcar was specifically design by Jpods for this project. The board was design to fit an ESP LOLIN D32 board, a RASPBERRY PI, and multiple sensors. The board's link can be found by clicking below: [Board](https://drive.google.com/drive/u/0/folders/1CtqrttBD3XoiUPqs3ZEBOA0wLDOCQpJk). 
- 
  Once the board received, I soldered the different connectors (2 pins, 3 pins and 4 pins), resistors, capacitors, OPamp and the LOLIN D32 connectors. A video of me assembling the board from scratch will be linked afterwards. 
  
 __Microcontroller__:

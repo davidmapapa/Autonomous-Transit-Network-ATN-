@@ -6,9 +6,7 @@ Here will be listed the different electronics parts and the Arduino files necess
  
 # TABLE OF CONTENTS 
 ##### 1.- [PCB and Microcontroller](###1.PCB%and%Microcontroller:) 
-##### 2.Sensors
-###### a.Description
-###### b.Code 
+##### 2.Sensors 
 ##### 3. Conclusion <br /><br /><br /><br />  
 
  

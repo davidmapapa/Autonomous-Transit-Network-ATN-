@@ -38,9 +38,9 @@ Each board was placed in a single podcar.
 To do so, we used few sensors that measured those aformentioned variables:  
    #### a. Neopixel: 
    ##### Description:
-   Those are a string of LED located in front of the car in order to report the status of the vehilce. **Green** if there's no       obstacle, **Red** if there's obstacle in front of the vehicle and **Blue** for obstacles in the back.
-      
-   <img src="https://cdn-shop.adafruit.com/1200x900/1426-00.jpg" width="305">
+   Those are the string of LED located in the front of each vehicle with the purpose of reporting the status of the vehilce. The neopixel string will flash **Green** if there's no obstacle, **Red** if there's an obstacle in front of the vehicle and **Blue** there are any obstacle behind the vehicle. This is done by directly utilizing the distance reported by each ultrasonic sensors (Front and Back).
+   
+   <img src="https://cdn.sparkfun.com//assets/parts/9/3/7/2/12661-01a.jpg" width="250"> <img src="https://cdn.sparkfun.com//assets/parts/9/3/7/2/12661-03a.jpg" width="250">
    
    ##### Code:  
 ```C++
@@ -120,7 +120,7 @@ void Neocolor(String var){
    
    #### b. Ultrasonic sensors:
    ##### Description:
-   An ultrasonic sensor can be considered as an electronic device that measure the distance of an object using ultrasonic waves. The ultrasonic sensor sends a wave signals through a Ping and accounts for the time it takes for the wave to hit an object and bounce back. Knowing the speed at which a ultrasonic wave travel, it easy to determine the distance at which the object is located. 
+   An ultrasonic sensor can be considered as an electronic device that measure the distance between an object and the sensor itself using ultrasonic waves. The ultrasonic sensor sends a wave signal through a Ping signal and accounts for the time it takes for the wave to hit an object and bounce back. Knowing the speed at which an ultrasonic wave travel, it easy to determine the distance at which the object is located. The ultrasonic sensors are located in the front and back of the vehicle scaning if there are any other vehicle in proximty.  
    
    <img src="https://images-na.ssl-images-amazon.com/images/I/71-TKtOybqL._SL1500_.jpg" width="305">
  
@@ -142,23 +142,19 @@ void setup() {
 void loop() {
   long durationF, inchesF, cmF;
   long durationB, inchesB, cmB;
-
 // Do the front
   pinMode(pingPinF04, OUTPUT);  // send the ping
   digitalWrite(pingPinF04, HIGH);  // start the ping
   delayMicroseconds(5);   // run for 5 microseconds
   digitalWrite(pingPinF04, LOW);  // stop pinging
-//
   pinMode(echoPinF04, INPUT);  // switch to echo
 durationF = pulseIn(echoPinF04, HIGH);  // read the echo
  
-
 // Do the back
   pinMode(pingPinB12, OUTPUT);
   digitalWrite(pingPinB12, HIGH);
   delayMicroseconds(5);   // run for 5 microseconds
   digitalWrite(pingPinB12, LOW);  // stop pinging
-//
   pinMode(pingPinB12, INPUT);  // switch to echo
   durationB = pulseIn(echoPinB12, HIGH);  // read the echo
 
@@ -175,17 +171,13 @@ Serial.print(cmB);
 Serial.print("cmb");
 Serial.println();
   delay(20);
-
 }
 
-
-long microsecondsToInches(long microseconds)
-{
+long microsecondsToInches(long microseconds){
   return microseconds / 74 / 2;
 }
 
-long microsecondsToCentimeters(long microseconds)
-{
+long microsecondsToCentimeters(long microseconds){
   return microseconds / 29 / 2;
 }
 
@@ -197,7 +189,7 @@ long microsecondsToCentimeters(long microseconds)
     
    #### c. DC Motor: 
    ##### Description:
-   A DC Motor is an actuator device that converts electric current into mechanical energy. That energy is represented in terms of speed. 
+   A DC Motor is an actuator device that converts electric current into mechanical energy. That energy is represented in terms of speed. In this project the DC motor are the main component responsible for the motion of the vehicle. The motors run on a track at constant speed and accelerate when there's an obstacle coming from the back and decelerate if the ultrasonic sensor detects an obstacle in the front.  
    
    <img src="https://www.wiltronics.com.au/wp-content/uploads/images/make-and-create/gear-motor-dc-toy-car-wheel-arduino.jpg" width="305">
  
@@ -205,8 +197,7 @@ long microsecondsToCentimeters(long microseconds)
   ```C++
 // Your code here
 
-   void setup()
-{
+   void setup(){
     //setup channel 0 with frequency 312500 Hz
     sigmaDeltaSetup(0, 312500);
     //attach pin 18 to channel 0
@@ -215,8 +206,7 @@ long microsecondsToCentimeters(long microseconds)
     sigmaDeltaWrite(0, 0);
 }
 
-void loop()
-{
+void loop(){
     //slowly ramp-up the value
     //will overflow at 256
     static uint8_t i = 0;
@@ -229,7 +219,7 @@ void loop()
 <br /><br /><br />     
    #### d. Servo Motor:
    ##### Description:
-   A servo motor is also an actuator device, that can precisely control its linear position, velocity and acceleration. A servo motor is a motor that has a build in closed-loop system. Meaning the postion of the motor can be determined using position feedback control. 
+   A servo motor is also an actuator device, that can precisely determine its linear and angular position, velocity and acceleration. A servo motor has a build in closed-loop system that determines its postion using position feedback control. In our project the servo motors are used to switch the podcar from the inner to the outer track.  
    
    <img src="https://media.digikey.com/Photos/DFRobot/MFG_SER0006.jpg" width="305" >
    
@@ -238,7 +228,6 @@ void loop()
 // Your code here
 
 #include <ESP32Servo.h>
-
 Servo myservo;  // create servo object to control a servo
 // 16 servo objects can be created on the ESP32
 
@@ -278,7 +267,7 @@ void loop() {
    
    #### e. Hall Effect:
    ##### Description:
-   An Hall effect sensor is a device that is able to detect a magnetic field. Therefore, one can use an hall sensor to detect magnets that are located at close proximity. We will use two different type of hall sensor, a latching sensor (up) that would detect small magnets placed in the wheel and through some simple calculations determine the distance travelled. As well as a non latching magnet (down) on the podcar to detect the magnet on the track and therefore determine our position on the track. There will be a total of five magnets on the track each representing a station. 
+   An Hall effect sensor is a device that is able to detect a magnetic field. Therefore, one can use an hall sensor to detect magnets that are located at close proximity. We will use two different type of hall sensor, a latching sensor (up) that would detect small magnets placed in the wheel and through some simple calculations determine the distance travelled by the podcar. As well as a non latching sensor (down), on the podcar to detect the magnets palced on the track as a representation of stations. There will be a total of five magnets on the track each of them will help determine the relative postion of a podcar as it passes through it.  
    
    
    <img src="https://s3-sa-east-1.amazonaws.com/robocore-lojavirtual/262/images/262_1_H.png?20200127094024" width="305" >
@@ -317,6 +306,7 @@ void interruptHall() {
 
 <br /><br /><br />
 ## 3. Conclusion
+The project is small scale proof of concept of a Personal Rapid Transit system. The project mostly highlights and explains the various sensors and code required to understand the scale_model code file upload at the top of the page. Once the code downloaded, one can easily implement it multiple podcars and build a system of their own.    
    
   
 

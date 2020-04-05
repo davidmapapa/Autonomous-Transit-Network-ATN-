@@ -5,10 +5,10 @@ The 3D print drawings and CAD necessary to build both the track and the vehicle 
 Here will be listed the different electronics parts and the Arduino files necessary to program the pods. 
  
 # TABLE OF CONTENTS 
-##### 1. (##1.PCB%and%Microcontroller:) - [PCB and Microcontroller](###1.PCB%and%Microcontroller:) (###Example%201%20Heading)
+##### 1.- [PCB and Microcontroller](###1.PCB%and%Microcontroller:) 
 ##### 2.Sensors
-######  a.Description
-######  b.Code 
+###### a.Description
+###### b.Code 
 ##### 3. Conclusion <br /><br /><br /><br />  
 
  

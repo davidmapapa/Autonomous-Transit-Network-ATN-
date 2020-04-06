@@ -25,9 +25,10 @@ Here are pictures of an empty board, pins conncetors, resistors and capacitors b
 
 
 Each board was placed in a single podcar.  
-<img src="https://user-images.githubusercontent.com/58591461/74691691-a696c900-5198-11ea-8146-19ac58ae621d.jpg" width="390">  <img src="https://user-images.githubusercontent.com/58591461/74691734-d34ae080-5198-11ea-8845-0f1f017e3e73.jpg" width="400">
-
 <img src="https://user-images.githubusercontent.com/58591461/78518504-87b6bb00-7775-11ea-9cf0-00317634cdf8.JPG" width="400">
+<img src="https://user-images.githubusercontent.com/58591461/74691734-d34ae080-5198-11ea-8845-0f1f017e3e73.jpg" width="400">
+
+<img src="https://user-images.githubusercontent.com/58591461/74691691-a696c900-5198-11ea-8146-19ac58ae621d.jpg" width="390">
 
 <br /><br /><br /><br />
 

@@ -19,12 +19,12 @@ The Printed Circuit Board (PCB) used in the podcar was specifically design by Jp
 __Microcontroller__:
 The Lolin D32 is a chip that is part of the WEMOS ESP32 microcontroller family. The chip is compatible with the Arduino IDE as well as micropython. A major benefit of the chip is that it easily allows WiFi connection.
 
-Here are pictures of an empty board, pins conncetors, resistors and capacitors before and after soldering. 
+__Soldered and not soldered Printed Circuit Board__ 
 <img src="https://user-images.githubusercontent.com/58591461/74691817-32a8f080-5199-11ea-8c66-da995081eb52.jpg" width="324">
 <img src="https://user-images.githubusercontent.com/58591461/74690625-95e45400-5194-11ea-99a9-ad1611ff258d.JPG" width="458">
 
 
-Each board was placed in a single podcar.  
+__Boards and car assembly__  
 <img src="https://user-images.githubusercontent.com/58591461/78518504-87b6bb00-7775-11ea-9cf0-00317634cdf8.JPG" width="390">
 <img src="https://user-images.githubusercontent.com/58591461/74691734-d34ae080-5198-11ea-8845-0f1f017e3e73.jpg" width="430">
 

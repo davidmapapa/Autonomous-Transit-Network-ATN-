@@ -20,6 +20,7 @@ __Microcontroller__:
 The Lolin D32 is a chip that is part of the WEMOS ESP32 microcontroller family. The chip is compatible with the Arduino IDE as well as micropython. A major benefit of the chip is that it easily allows WiFi connection.
 
 __Soldered and not soldered Printed Circuit Board__ 
+
 <img src="https://user-images.githubusercontent.com/58591461/74691817-32a8f080-5199-11ea-8c66-da995081eb52.jpg" width="320">
 <img src="https://user-images.githubusercontent.com/58591461/74690625-95e45400-5194-11ea-99a9-ad1611ff258d.JPG" width="454">
 

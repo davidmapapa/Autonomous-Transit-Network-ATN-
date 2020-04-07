@@ -1,7 +1,7 @@
 # ABSTRACT
  As an illustrative proof of concept of an Autonomous Transit Network **(ATN)**, Spartan Superway and Jpods have designed and built a small scale model ATN. The system displays mutiple cars runing autonomously around a track, with each vehicle (podcar) following its own route. In the instance of two vehicles coming in proximity of each other, the model would slow down one podcar and acclerate the other in order to avoid collision. This was done to imitate a Personal Rapid Transit **(PRT)** model, which offers an altrernative solution to transportation. PRT system allows individuals to commute on podcar vehicles located on elevated guideways or rails while avoiding ground traffic, without the trouble of waiting for a set schedule and while opening possibility of allocation of unused ground space to different human activities and natural habitats. Here are perfect illustrations of such system by the [click for CGTN News report](https://www.youtube.com/watch?v=QBp7HuzCCWU) and [click Jpod's video](https://www.youtube.com/watch?v=rRIzvfW8XXs).
  In this project, I will describe and list the necessary ressources needed in order to design, build and program a small scale podcar model. After going through this tutorial, one should be able to grasp the necessary code in order to program a single pod. [click for single pod video](https://player.vimeo.com/video/390130443). After grasping the basics of the software, one can interface multiple podcar vehicles and build a network. [click for two pods video](https://www.youtube.com/watch?v=rCR6fW-CSME).
-For additional informations about the 3D print drawings and CAD necessary to build both the track and the vehicle, visit www.jpods.com/contact_us.  
+For additional informations about the 3D print drawings and CAD necessary to build both the track and the vehicle, visit [jpods/contact_us](https://www.jpods.com/contact_us).  
  
 # TABLE OF CONTENTS 
 ##### 1.- [PCB and Microcontroller](###1.PCB%and%Microcontroller:) 
@@ -12,11 +12,11 @@ For additional informations about the 3D print drawings and CAD necessary to bui
  
  ## 1.PCB and Microcontroller: 
  __Printer Circuit Board__: 
-The Printed Circuit Board (PCB) used in the podcar was specifically design by Jpods for this project. The board was design to fit an ESP LOLIN D32 board, a RASPBERRY PI, and multiple sensors. The board's link can be found by clicking below: [Board](https://drive.google.com/drive/u/0/folders/1CtqrttBD3XoiUPqs3ZEBOA0wLDOCQpJk). 
+The Printed Circuit Board (PCB) used in the podcar was specifically design by Jpods for this project. The board was built to fit an ESP LOLIN D32 board, a RASPBERRY PI, and multiple sensors. The board's link can be found by clicking below: [Board](https://drive.google.com/drive/u/0/folders/1CtqrttBD3XoiUPqs3ZEBOA0wLDOCQpJk). 
  Once the board received, I soldered the different connectors (2 pins, 3 pins and 4 pins), resistors, capacitors, OPamp and the LOLIN D32 connectors. A video of me assembling the board from scratch will be linked afterwards. 
  
 __Microcontroller__:
-The Lolin D32 is a chip that is part of the WEMOS ESP32 microcontroller family. The chip is compatible with the Arduino IDE as well as micropython. A major benefit of the chip is that it easily allows WiFi connection.
+The Lolin D32 is a board that is part of the WEMOS ESP32 microcontroller family. The D32 chip controls all sensors, actuators and WEB protocols used in this project. The board is compatible with the Arduino IDE as well as micropython, which are both free to download on their respective websites. A major benefit of the Lolin board is that it easily allows WiFi connection.
 
 __Soldered and not soldered Printed Circuit Board__ 
 
@@ -34,7 +34,7 @@ __Boards and car assembly__
 
 
 ## 2.Sensors: 
- In order to make a single pod operate autonomoulsy, different physical factors needed to be processed. This was done to ensure the safety and robustness of the system. Among those factors were the speed of the podcar vehicle, the front and back distances that seperating the vehicles from each other, the distance travelled by each vehicle, the station of each pod vehicle (inner or outter station) and finally the position of other podcar vehicles. 
+ In order to make a single pod operate autonomoulsy, different physical factors needed to be processed. This was done to ensure the safety and robustness of the system. Among those factors were the speed of the podcar vehicle, the front and back distances that seperating the vehicles from each other, the distance travelled by each vehicle, the station of each pod vehicle (inner or outer station) and finally the position of other podcar vehicles. 
 To do so, we used few sensors that measured those aformentioned variables:  
    #### a. Neopixel: 
    ##### Description:

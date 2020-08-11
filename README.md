@@ -308,12 +308,3 @@ void interruptHall() {
 ## 3. Conclusion
 The project is small scale proof of concept of a Personal Rapid Transit system. The project mostly highlights and explains the various sensors and code required to understand the scale_model code file upload at the top of the page. Once the code downloaded, one can easily implement it multiple podcars and build a system of their own.    
    
-  
-
- 
-
-
-
- 
-
-  
